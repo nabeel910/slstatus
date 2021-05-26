@@ -65,15 +65,17 @@ static const char unknown_str[] = "";
  */
 static const struct arg args[] = {
 	/* function 		format          argument */
-	{ separator, 		"%s",           " " },
+	{ separator, 		"%s",          " " },
 	{ run_command, 		"%s",        	"sb-media" },
-	{ separator, 		"%s",           " " },
+	{ separator, 		"%s",          "" },
+	{ run_command, 		"%s",    	"sb-packagecount" },
+	{ separator, 		"%s",          "" },
 	{ run_command, 		"🌡 %s",    	 "sb-cputemp" },
-	{ separator, 		"%s",           " | " },
-	{ run_command, 		"⬇  %s",     	"sb-down" },
-	{ separator, 		"%s",           " | " },
-	{ keymap, 		"📖 %s",           "" },
-	{ separator, 		"%s",           " | " },
+	{ separator, 		"%s",          " | " },
+	{ run_command, 		"⬇️ %s",     	"sb-down" },
+	{ separator, 		"%s",          " | " },
+	{ keymap, 		"📖 %s",       "" },
+	{ separator, 		"%s",          " | " },
 	{ battery_state, 	"%s ",     	"BAT0" },
 	{ battery_perc, 	"🔋 %s",    	"BAT0" },
 	{ separator, 		"%s",           " | " },
@@ -86,5 +88,5 @@ static const struct arg args[] = {
 	{ datetime, 		"📅 %s",        "%a,%d-%m" },
 	{ separator, 		"%s",           " | " },
 	{ datetime, 		"🕒 %s",        "%I:%M" },
-	{ separator, 		"%s",           " " },
+	{ separator, 		"%s",             " " },
 };
