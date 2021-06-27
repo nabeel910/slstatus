@@ -68,7 +68,7 @@ static const struct arg args[] = {
 	{ separator, 		"%s",          " " },
 	{ run_command, 		"%s",        	"sb-media" },
 	{ separator, 		"%s",          "" },
-	{ run_command, 		"%s",    	"sb-packagecount" },
+	{ run_command, 		"%s",    	"sb-pc-output" },
 	{ separator, 		"%s",          "" },
 	{ run_command, 		"🌡 %s",    	 "sb-cputemp" },
 	{ separator, 		"%s",          " | " },
