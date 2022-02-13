@@ -63,28 +63,4 @@ static const char unknown_str[] = "";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
-static const struct arg args[] = {
-	/* function 		format          argument */
-	{ separator, 		"%s",         	" " },
-	{ run_command, 		"%s",        	"~/.local/bin/statusbar/sb-media" },
-	{ run_command, 		"%s",    	"~/.local/bin/statusbar/sb-updates" },
-	{ run_command, 		"🌡 %s",      	"~/.local/bin/statusbar/sb-cputemp" },
-	{ separator, 		"%s",        	" | " },
-	{ run_command, 		"⬇  %s",     	"~/.local/bin/statusbar/sb-down" },
-	{ separator, 		"%s",           " | " },
-	{ keymap, 		"📖  %s",         "" },
-	{ separator, 		"%s",           " | " },
-	{ battery_state, 	"%s ",     	"BAT0" },
-	{ battery_perc, 	"🔋 %s",    	"BAT0" },
-	{ separator, 		"%s",           " | " },
-	{ run_command, 		"🔆 %s",     	"~/.local/bin/statusbar/sb-brightness" },
-	{ separator, 		"%s",           " | " },
-	{ run_command,		"%s",        	"~/.local/bin/statusbar/sb-sound" },
-	{ separator, 		"%s",           " | " },
-	{ wifi_essid, 		"📡 %s",      	"wlan0" },
-	{ separator, 		"%s",           " | " },
-	{ datetime, 		"📅 %s",       	"%a,%d-%m" },
-	{ separator, 		"%s",           " | " },
-	{ datetime, 		"🕛 %s",      	"%I:%M" },
-	{ separator, 		"%s",           " " },
-};
+#include "/home/nabeel/apps/suckless/slstatus/themes/nerd.h"
