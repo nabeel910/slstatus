@@ -16,7 +16,7 @@ static const struct arg args[] = {
 	{ separator, 		"%s",           " | " },
 	{ run_command,		"%s",        	"~/.local/bin/statusbar/sb-sound-nerd" },
 	{ separator, 		"%s",           " | " },
-	{ wifi_essid, 		"  %s",      	"wlan0" },
+	{ wifi_essid, 		"  %s",      	"wlp1s0" },
 	{ separator, 		"%s",           " | " },
 	{ datetime, 		"  %s",       	"%a,%d-%m" },
 	{ separator, 		"%s",           " | " },
